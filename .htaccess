@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+
+    # Make sure directory listing is disabled
+	Options +FollowSymLinks -Indexes
+	RewriteEngine on
+
+	# Wewrite "www.domain.com -> domain.com" uncomment the following lines.
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+</IfModule>
