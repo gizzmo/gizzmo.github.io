@@ -9,4 +9,7 @@
 	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
+	# Rewrite "myip" to myip.php
+	RewriteRule ^(myip)$ $1.php [NC,L]
+
 </IfModule>
