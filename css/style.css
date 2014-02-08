@@ -1,0 +1,42 @@
+/**
+ * Copyright justgizzmo.com
+
+ */
+body {
+	margin: 0;
+	margin-bottom: 15px;
+	background-color: #3c6aa0;
+}
+
+#splash {
+	width: 728px;
+	height: 394px;
+
+	background-repeat:none;
+	background-position:center center;
+	background-image: url('../img/splash.1.jpg');
+	background-size: contain;
+}
+
+@media (min-width: 992px) {
+	#splash {
+		width: 970px;
+		height: 523px;
+	}
+}
+@media (min-width: 1200px) {
+	#splash {
+		width: 1170px;
+		height: 632px;
+	}
+}
+
+#adsence {
+	width: 728px;
+	height: 90px;
+	background-image: url('../img/adbg.1.jpg');
+}
+
+#splash, #adsence {
+	margin: 0 auto;
+}
