@@ -13,7 +13,7 @@ body {
 
     background-repeat:none;
     background-position:center center;
-    background-image: url('../img/splash.1.jpg');
+    background-image: url('../img/splash.jpg');
     background-size: contain;
 }
 
@@ -33,7 +33,7 @@ body {
 #adsence {
     width: 728px;
     height: 90px;
-    background-image: url('../img/adbg.1.jpg');
+    background-image: url('../img/adbg.jpg');
 }
 
 #splash, #adsence {
