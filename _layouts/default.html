@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/style.css">
+
+<!--
+    Hey viewer,
+
+    Sorry its so messy, It's really hard to make it look nice with the post
+    processing that Jekyll does. But I can promis you the source looks great.
+
+    Thankx for looking at the source code of my site.
+-->
+</head>
+<body>
+
+{{ content }}
+
+{% include analytics.html %}
+</body>
+</html>
+<!-- Last update: {{ site.time }} -->
