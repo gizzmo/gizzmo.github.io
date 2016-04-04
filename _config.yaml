@@ -1,0 +1,4 @@
+# Exclude these files from the production _site
+exclude:
+    - CNAME
+    - README.md
