@@ -11,7 +11,7 @@ body {
     width: 728px;
     height: 394px;
 
-    background-repeat:none;
+    background-repeat:no-repeat;
     background-position:center center;
     background-image: url('../img/splash.jpg');
     background-size: contain;
