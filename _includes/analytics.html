@@ -1,7 +1,7 @@
 {% if site.google_analytics %}
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-6162886-3', 'justgizzmo.com');ga('send','pageview');
+        ga('create','{{site.google_analytics}}', 'justgizzmo.com');ga('send','pageview');
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,15 +58,16 @@
     <h1>Page Not Found</h1>
     <p>Sorry, but the page you were trying to view does not exist.</p>
 
-    <!-- Google Analytics -->
+{% if site.google_analytics %}
     <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-6162886-3', 'justgizzmo.com');
+        ga('create','{{site.google_analytics}}', 'justgizzmo.com');
 
         // Track 404 errors
         ga('send', 'pageview', '404.html?page='+ document.location.pathname + document.location.search +'&from=' + document.referrer);
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+{% endif %}
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
