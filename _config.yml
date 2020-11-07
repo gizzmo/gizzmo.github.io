@@ -1,10 +1,15 @@
 # Setup
 title:              Justgizzmo.com
 
-# Google Analytics web tracking code (e.g. UA-2110908-2)
-google_analytics:   UA-6162886-3
-
 # Exclude these files from the production _site
 exclude:
     - CNAME
     - README.md
+
+# for github pages
+# gems:
+# - jekyll-github-metadata
+# - jekyll-mentions
+# - jekyll-redirect-from
+# - jekyll-sitemap
+# - jemoji

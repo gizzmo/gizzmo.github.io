@@ -7,15 +7,17 @@
 
     <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
     <meta name="description" content="">
+    
+{% if page.style %}
+    <link rel="stylesheet" href="css/{{page.style}}.css">
+{% endif %}
 
-    <link rel="stylesheet" href="css/style.css">
-
+{% include analytics.html %}
 </head>
 <body>
 
 {{ content }}
 
-{% include analytics.html %}
 </body>
 </html>
 <!-- Last update: {{ site.time }} -->

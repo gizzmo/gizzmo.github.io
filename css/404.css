@@ -1,0 +1,45 @@
+/**
+ * Copyright justgizzmo.com
+ */
+* {
+    line-height: 1.5;
+    margin: 0;
+}
+
+html {
+    color: #888;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    left: 50%;
+    margin-left: -150px;
+    position: absolute;
+    top: 25%;
+    width: 300px;
+}
+
+h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 330px) {
+
+    body {
+        margin: 10px auto;
+        position: static;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+}
